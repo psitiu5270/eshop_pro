@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46296c8a-68f3-448d-8fae-6059052c6c7e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/shop-core/target/classes/com/online/nhy/config/MyBatisConfiguration.class" afterPath="$PROJECT_DIR$/shop-core/target/classes/com/online/nhy/config/MyBatisConfiguration.class" />
       <change beforePath="$PROJECT_DIR$/shop-core/target/classes/com/online/nhy/service/IBaseService.class" afterPath="$PROJECT_DIR$/shop-core/target/classes/com/online/nhy/service/IBaseService.class" />
       <change beforePath="$PROJECT_DIR$/shop-core/target/classes/com/online/nhy/service/impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/shop-core/target/classes/com/online/nhy/service/impl/BaseServiceImpl.class" />
@@ -18,9 +17,6 @@
       <change beforePath="$PROJECT_DIR$/shop-model/target/classes/com/online/nhy/vo/BasePagerVo.class" afterPath="$PROJECT_DIR$/shop-model/target/classes/com/online/nhy/vo/BasePagerVo.class" />
       <change beforePath="$PROJECT_DIR$/shop-model/target/classes/com/online/nhy/vo/BaseVo.class" afterPath="$PROJECT_DIR$/shop-model/target/classes/com/online/nhy/vo/BaseVo.class" />
       <change beforePath="$PROJECT_DIR$/shop-model/target/classes/com/online/nhy/vo/WfBaseVo.class" afterPath="$PROJECT_DIR$/shop-model/target/classes/com/online/nhy/vo/WfBaseVo.class" />
-      <change beforePath="$PROJECT_DIR$/shop-web/pom.xml" afterPath="$PROJECT_DIR$/shop-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/shop-web/src/main/java/WebApplication.java" afterPath="$PROJECT_DIR$/shop-web/src/main/java/com/online/nhy/application/WebApplication.java" />
-      <change beforePath="$PROJECT_DIR$/shop-web/target/classes/WebApplication.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/shop-web/target/classes/application.yml" afterPath="$PROJECT_DIR$/shop-web/target/classes/application.yml" />
       <change beforePath="$PROJECT_DIR$/shop-web/target/classes/com/online/nhy/controller/WfController.class" afterPath="$PROJECT_DIR$/shop-web/target/classes/com/online/nhy/controller/WfController.class" />
     </list>
@@ -628,7 +624,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590140777477</updated>
-      <workItem from="1590140782751" duration="14755000" />
+      <workItem from="1590140782751" duration="14782000" />
     </task>
     <task id="LOCAL-00001" summary="22">
       <created>1590384513983</created>
@@ -637,11 +633,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590384513983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="22">
+      <created>1590481806773</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590481806773</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14755000" />
+    <option name="totallyTimeSpent" value="14782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
