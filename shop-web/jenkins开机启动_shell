@@ -1,0 +1,33 @@
+1、编写启动脚本jenkins
+#!/bin/bash
+# 导入环境变量
+#chkconfig: 2345 80 90
+#description:auto_run
+export JENKINS_HOME=/usr/local/jenkins
+export JAVA_HOME=/usr/java/jdk1.8.0_221
+
+cd $JENKINS_HOME
+
+pid=`ps -ef | grep jenkins.war | grep -v 'grep'| awk '{print $2}'`
+   if [ "$1" = "start" ];then
+   if [ -n "$pid" ];then
+   echo 'jenkins is running...'
+else
+   ### java启动服务 配置java安装根路径,和启动war包存的根路径
+   nohup $JAVA_HOME/bin/java  -Xms128m -Xmx256m   -jar $JENKINS_HOME/jenkins.war  --ajp13Port=-1 --httpPort=8080 >/dev/null 2>&1 &
+   fi
+   elif [ "$1" = "stop" ];then
+   exec ps -ef | grep jenkins | grep -v grep | awk '{print $2}'| xargs kill -9
+   echo 'jenkins is stop...'
+else
+   echo "Please input like this:"./jenkins.sh start" or "./jenkins stop""
+   fi
+2、给jenkins.sh文件授权
+chmod +x /usr/local/jenkins/jenkins.sh
+3、将该文件移动到 /etc/init.d
+	cp  jenkins.sh  /etc/init.d
+	#添加为服务，并设置开机启动
+	chkconfig --add jenkins.sh
+	chkconfig --list                             # 检查一下是否加入了 start_for_cdn_node.sh
+	chkconfig jenkins.sh on           # (开机自启动)
+	service jenkins.sh start          # (启动服务)
