@@ -1,6 +1,6 @@
-FROM java:8
+FROM frolvlad/alpine-oraclejdk8:slim
 VOLUME /tmp
-ADD shop-web-1.0-SNAPSHOT.jar /app.jar
-EXPOSE 7081
-ENTRYPOINT ["java","-jar","app.jar"]
-#docker run -d -p 7081:7081 app
+ADD shop-web-1.0-SNAPSHOT.jar app.jar
+#RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+EXPOSE 7801
