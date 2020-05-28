@@ -1,4 +1,4 @@
-1、编写启动脚本jenkins
+1、编写启动脚本jenkins.sh
 #!/bin/bash
 # 导入环境变量
 #chkconfig: 2345 80 90
